@@ -1,0 +1,59 @@
+Задание 1. 
+
+long_phrase = 'Насколько проще было бы писать программы, если бы не заказчики'
+short_phrase = '640Кб должно хватить для любых задач. Билл Гейтс (по легенде)'
+if long_phrase > short_phrase:
+    print("True")
+else:
+    print("False")
+True
+
+Задание 2.
+
+bytes = 224059719.68
+mb_bytes = bytes / 1048576
+print( "Объем файла равен", mb_bytes)
+
+Задание 3. 
+
+mouth = input('Введите месяц')
+date = int(input('Введите дату'))
+if (mouth == "январь" and date >= 21) or (mouth == "февраль" and date <= 18):
+    print("Водолей")
+elif (mouth == "январь" and date <= 20) or (mouth == "декабрь" and date >= 22):
+    print("Козерог")
+elif (mouth == "февраль" and date >= 19) or (mouth == "март" and date <= 20):    
+    print("Рыбы")
+elif (mouth == "март" and date >= 21) or (mouth == "апрель" and date <= 19):    
+    print("Овен")    
+elif (mouth == "апрель" and date >= 20) or (mouth == "май" and date <= 20):    
+    print("Телец")       
+elif (mouth == "май" and date >= 21) or (mouth == "июнь" and date <= 21):    
+    print("Близнецы")
+elif (mouth == "июнь" and date >= 22) or (mouth == "июль" and date <= 22):    
+    print("Рак")       
+elif (mouth == "июль" and date >= 23) or (mouth == "август" and date <= 22):    
+    print("Лев")
+elif (mouth == "август" and date >= 23) or (mouth == "сентябрь" and date <= 22):    
+    print("Дева")   
+elif (mouth == "сентябрь" and date >= 23) or (mouth == "октябрь" and date <= 23):    
+    print("Весы")
+elif (mouth == "октябрь" and date >= 24) or (mouth == "ноябрь" and date <= 22):    
+    print("Скорпион")
+elif (mouth == "ноябрь" and date >= 23) or (mouth == "декабрь" and date <= 21):    
+    print("Стрелец")
+else:
+    print("Вы указали неверную дату")
+
+Задание 4. 
+
+salary = int(input('Введите заработную плату'))
+mortgage = int(input('Введите процент от з/п, который вы тратите на ипотеку'))
+life = int(input('Введите процент трат на жизнь'))
+bonus = int(input('Введите количество премий'))
+salary_per_year = salary * 12
+life_per_year = (salary / 100) * life * 12
+mortgage_per_year = (salary / 100) * mortgage * 12
+bonus_per_year = salary * bonus
+saved_money = (salary_per_year + bonus_per_year) - (mortgage_per_year + life_per_year)
+print('На ипотеку было потрачено:', mortgage_per_year, "Было накоплено:", saved_money)
